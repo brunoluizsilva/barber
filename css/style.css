@@ -35,7 +35,7 @@ img {
 /* header/menu */
 
 .bg-header {
-  background: url(../img/bg-intro-2.jpg) no-repeat center center;
+  background: url(../img/bg-desktop.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -191,6 +191,12 @@ img {
     transition-duration: 0.5s;
     font-size: 1.5em;
     text-transform: uppercase;
+  }
+
+  .bg-header {
+    background: url(../img/bg-mobile.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
   }
 }
 
@@ -575,6 +581,9 @@ img {
   flex: 1 1 280px;
   margin: 0 10px;
 }
+.mapa iframe {
+  max-width: 280px;
+}
 .footer-redes {
   flex: 1 1 180px;
   margin: 0 10px;
@@ -650,6 +659,18 @@ img {
   .footer {
     align-items: center;
   }
+  .footer-redes {
+    text-align: center;
+  }
+  .footer p {
+    margin-top: 20px;
+  }
+  .footer-logo {
+    margin: 20px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 400px) {
   .footer-logo {
     margin: 20px auto 0px auto;
   }
